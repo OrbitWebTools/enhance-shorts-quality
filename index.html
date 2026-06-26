@@ -3,28 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0a0f1e">
+<meta name="theme-color" content="#080d1a">
 <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
 
-<!-- ═══════════════════════════════════════════════
-  FIX #1: Title — primary keyword FIRST, brand after
-══════════════════════════════════════════════════ -->
 <title>Enhance Reels & Shorts Quality Free | MP4 to MP3 Converter | OrbitWebTools</title>
 
 <meta name="description" content="Enhance Instagram Reels and YouTube Shorts quality to 4K free online. Extract MP3 audio from any video instantly. 100% private — your video never leaves your device. Works on mobile and PC.">
 <meta name="keywords" content="enhance reels quality online free, shorts to 4k converter, mp4 to mp3 online free, extract audio from video online, video quality enhancer free, reels 4k upscaler, youtube shorts enhancer, instagram reel quality booster">
+<meta name="author" content="OrbitWebTools">
 
-<!-- FIX #2: Canonical — apni actual URL -->
 <link rel="canonical" href="https://orbitwebtools.github.io/enhance-shorts-quality/">
-<link rel="manifest" href="../manifest.json">
-<link rel="apple-touch-icon" href="../icon-192x192.png">
+<link rel="manifest" href="manifest.json">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
 
-<!-- FIX #3: Open Graph + Twitter Card -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://orbitwebtools.github.io/enhance-shorts-quality/">
 <meta property="og:title" content="Enhance Reels & Shorts to 4K Free | MP4 to MP3 | OrbitWebTools">
-<meta property="og:description" content="Free online tool to enhance Instagram Reels and YouTube Shorts to 4K quality. Extract MP3/WAV audio from any video. 100% private — video never uploaded to server.">
+<meta property="og:description" content="Free online tool to enhance Instagram Reels and YouTube Shorts to 4K quality. Extract MP3/WAV audio from any video. 100% private client-side processing.">
 <meta property="og:image" content="https://orbitwebtools.github.io/enhance-shorts-quality/og-image.jpg">
 <meta property="og:locale" content="en_IN">
 <meta property="og:site_name" content="OrbitWebTools">
@@ -32,33 +27,30 @@
 <meta name="twitter:title" content="Enhance Reels & Shorts to 4K Free | MP4 to MP3 | OrbitWebTools">
 <meta name="twitter:description" content="Boost Instagram Reels and YouTube Shorts to 4K quality free. Extract MP3 audio from video. Works in browser — 100% private.">
 
-<!-- FFmpeg — must be loaded before use -->
 <script src="coi-serviceworker.js"></script>
 <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"></script>
 
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<!-- FIX #4: Schema — fake rating hataaya, real WebApplication schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Reels & Shorts Quality Enhancer — OrbitWebTools",
+  "name": "Reels & Shorts Quality Enhancer",
   "url": "https://orbitwebtools.github.io/enhance-shorts-quality/",
   "applicationCategory": "MultimediaApplication",
-  "operatingSystem": "All, Android, iOS, Windows, Mac",
-  "description": "Free online tool to enhance Instagram Reels and YouTube Shorts to 4K quality using Lanczos upscaling. Also extracts MP3 or WAV audio from any video. All processing happens in your browser — your video is never uploaded.",
+  "operatingSystem": "All modern web browsers (Chrome, Safari, Edge, Firefox)",
+  "description": "Free online tool to enhance Instagram Reels and YouTube Shorts to 4K quality using Lanczos upscaling. Also extracts MP3 or WAV audio from any video. All processing happens locally in your device memory.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
   "creator": { "@type": "Organization", "name": "OrbitWebTools", "url": "https://orbitwebtools.github.io/" },
   "featureList": [
     "Enhance Reels and Shorts to 4K quality",
     "MP4 to MP3 audio extractor",
     "WAV lossless audio extraction",
-    "Works 100% offline in browser",
-    "No video file uploaded to any server",
+    "Works 100% offline via WebAssembly",
+    "Zero server payload routing",
     "Mobile and PC compatible"
   ]
 }
@@ -83,22 +75,17 @@
     {
       "@type": "Question",
       "name": "How to enhance Instagram Reels quality to 4K online free?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Open OrbitWebTools on your browser, upload your Reel video (MP4, MOV, or MKV), select 'Enhance Video to 4K', choose your target resolution (4K or 2K), and click Start Processing. The tool uses Lanczos upscaling and sharpening to improve video quality. Download the enhanced video and upload it to Instagram — the platform will recognise it as high quality content." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Open OrbitWebTools on your browser, upload your Reel video (MP4, MOV, or MKV), select 'Enhance Video to 4K', choose your target resolution (4K or 2K), and click Start Processing. The tool uses Lanczos upscaling and unsharp masking to improve video quality locally on your device." }
     },
     {
       "@type": "Question",
       "name": "How to convert MP4 to MP3 online free without losing quality?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Upload your MP4 video on OrbitWebTools, click the 'Extract Audio (MP3/WAV)' tab, select MP3 at 320kbps or lossless WAV format, and click Extract Audio. The tool uses FFmpeg to strip the audio track directly from your video. Your audio file is ready to download in seconds. Your video file is never uploaded to any server." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Upload your MP4 video on OrbitWebTools, click the 'Extract Audio (MP3/WAV)' tab, select MP3 at 320kbps or lossless WAV format, and click Extract Audio. The tool uses WebAssembly FFmpeg to strip the audio track directly from your video without server interaction." }
     },
     {
       "@type": "Question",
       "name": "Is it safe to use this tool for private videos?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes, completely safe. This tool runs entirely inside your browser using WebAssembly (WASM) technology. Your video file never leaves your device and is never uploaded to any server. It is completely safe for personal, private, and confidential video files." }
-    },
-    {
-      "@type": "Question",
-      "name": "Does enhancing Shorts quality to 4K actually help get more views?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Instagram and YouTube use quality signals when deciding which videos to promote. When you upload a 4K video, the platform treats it as high-quality content and is more likely to show it to wider audiences. Upscaling your 1080p Reel or Short to 4K using Lanczos filtering also sharpens blurry edges, making the video look noticeably crisper to viewers." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, completely safe. This tool runs entirely inside your browser using WebAssembly (WASM) technology. Your video file never leaves your device and is never uploaded to any cloud server." }
     }
   ]
 }
@@ -107,1162 +94,553 @@
 <style>
 :root {
   --bg: #080d1a;
-  --surface: #0f1629;
+  --surface: rgba(15, 22, 41, 0.75);
   --surface2: #141e35;
   --card: #111827;
-  --border: rgba(255,255,255,0.08);
-  --border2: rgba(255,255,255,0.13);
-  --text: #f1f5f9;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(124, 58, 237, 0.35);
+  --text: #f8fafc;
   --muted: #94a3b8;
   --muted2: #64748b;
   --violet: #7c3aed;
   --violet-light: #8b5cf6;
-  --violet-glow: rgba(124,58,237,0.2);
   --cyan: #06b6d4;
-  --cyan-glow: rgba(6,182,212,0.15);
   --green: #10b981;
   --red: #ef4444;
-  --gold: #f59e0b;
-  --radius: 20px;
+  --radius: 24px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.65;
+  line-height: 1.7;
   overflow-x: hidden;
   min-height: 100vh;
+  background-attachment: fixed;
 }
 
-/* Animated grid background */
+/* Cinematic Grid Background */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(124,58,237,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(124,58,237,0.03) 1px, transparent 1px);
-  background-size: 44px 44px;
+    linear-gradient(rgba(124,58,237,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124,58,237,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Ambient glow orbs */
+/* Ambient Deep Nebula Glow Orbs */
 body::after {
   content: '';
   position: fixed;
-  top: -200px; left: -200px;
-  width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%);
+  top: -10vw; left: 20vw;
+  width: 50vw; height: 50vw;
+  background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
 
 * { position: relative; z-index: 1; }
 
-/* ─── NAV ─── */
+/* ─── NAVIGATION ─── */
 .site-nav {
   position: sticky;
   top: 0;
   z-index: 200;
-  background: rgba(8,13,26,0.85);
+  background: rgba(8, 13, 26, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
-  padding: 0 28px;
+  padding: 0 24px;
 }
 .nav-inner {
-  max-width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 62px;
+  height: 70px;
 }
-.brand-link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
-.brand-text {
-  font-family: 'Syne', sans-serif;
-  font-weight: 800;
-  font-size: 1.18rem;
-  color: var(--text);
-  letter-spacing: -0.5px;
-}
+.brand-link { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand-text { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.35rem; color: var(--text); letter-spacing: -0.5px; }
 .brand-text em { color: var(--violet-light); font-style: normal; }
-.brand-tag {
-  font-size: 0.65rem;
-  font-weight: 700;
-  background: var(--violet);
-  color: white;
-  padding: 2px 8px;
-  border-radius: 20px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-.nav-status {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--green);
-  background: rgba(16,185,129,0.1);
-  border: 1px solid rgba(16,185,129,0.2);
-  padding: 6px 14px;
-  border-radius: 40px;
-}
-.status-dot {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: var(--green);
-  animation: blink 2s infinite;
-}
-@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+.brand-tag { font-size: 0.7rem; font-weight: 800; background: var(--violet); color: white; padding: 4px 10px; border-radius: 50px; letter-spacing: 1px; text-transform: uppercase; }
 
-/* ─── HERO ─── */
-.hero {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 60px 24px 0;
-  text-align: center;
-  animation: fadeUp 0.6s ease both;
-}
-@keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+.nav-status { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 700; color: var(--green); background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.25); padding: 8px 16px; border-radius: 50px; }
+.status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
+@keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.3); opacity: 0.5; } }
 
-.hero-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--violet-light);
-  background: rgba(124,58,237,0.12);
-  border: 1px solid rgba(124,58,237,0.25);
-  padding: 6px 16px;
-  border-radius: 40px;
-  margin-bottom: 24px;
-}
+/* ─── HERO SECTION ─── */
+.hero { max-width: 960px; margin: 0 auto; padding: 60px 20px 20px; text-align: center; }
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 0.82rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: var(--cyan); background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3); padding: 8px 20px; border-radius: 50px; margin-bottom: 24px; }
 
-h1 {
-  font-family: 'Syne', sans-serif;
-  font-size: clamp(2rem, 5.5vw, 3.2rem);
-  font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -1.5px;
-  margin-bottom: 20px;
-  color: var(--text);
-}
-h1 .v { color: var(--violet-light); }
-h1 .c { color: var(--cyan); }
+h1 { font-family: 'Syne', sans-serif; font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; line-height: 1.15; letter-spacing: -1.5px; margin-bottom: 24px; }
+h1 .v { background: linear-gradient(to right, #c084fc, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+h1 .c { background: linear-gradient(to right, #22d3ee, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.hero-sub {
-  font-size: 1.05rem;
-  color: var(--muted);
-  max-width: 580px;
-  margin: 0 auto 36px;
-  font-weight: 500;
-  line-height: 1.7;
-}
+.hero-sub { font-size: 1.15rem; color: var(--muted); max-width: 660px; margin: 0 auto 40px; font-weight: 500; }
 
-.trust-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 44px;
-}
-.t-chip {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--muted);
-  background: var(--surface);
-  border: 1px solid var(--border2);
-  padding: 7px 14px;
-  border-radius: 40px;
-}
+.trust-row { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 12px; margin-bottom: 50px; }
+.t-chip { font-size: 0.85rem; font-weight: 700; color: var(--muted); background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 8px 18px; border-radius: 50px; }
 
-/* ─── TOOL CARD ─── */
-.app-wrap {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 24px 64px;
-}
+/* ─── TOOL INTERFACE ─── */
+.app-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 60px; }
+.tool-card { background: var(--surface); border: 1px solid var(--border-glow); border-radius: var(--radius); backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px); box-shadow: 0 30px 100px rgba(0,0,0,0.6); overflow: hidden; }
 
-.tool-card {
-  background: var(--card);
-  border: 1px solid var(--border2);
-  border-radius: 28px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-  animation: fadeUp 0.7s 0.1s ease both;
-}
+/* Mode Tab Switcher */
+.mode-tabs { display: flex; border-bottom: 1px solid var(--border); background: rgba(0,0,0,0.3); }
+.mode-tab { flex: 1; padding: 22px; font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 800; color: var(--muted2); background: none; border: none; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 10px; border-bottom: 3px solid transparent; }
+.mode-tab:hover { color: var(--text); }
+.mode-tab.active { color: var(--text); border-bottom-color: var(--violet-light); background: rgba(124,58,237,0.1); }
+.mode-tab.active.audio-mode { border-bottom-color: var(--cyan); background: rgba(6,182,212,0.1); }
 
-/* Tab switcher at top */
-.mode-tabs {
-  display: flex;
-  border-bottom: 1px solid var(--border);
-}
-.mode-tab {
-  flex: 1;
-  padding: 18px 16px;
-  font-family: 'Syne', sans-serif;
-  font-size: 0.92rem;
-  font-weight: 800;
-  color: var(--muted2);
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: 0.25s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
-}
-.mode-tab:hover { color: var(--muted); }
-.mode-tab.active {
-  color: var(--text);
-  border-bottom-color: var(--violet-light);
-  background: rgba(124,58,237,0.05);
-}
-.mode-tab.active.audio-mode { border-bottom-color: var(--cyan); background: rgba(6,182,212,0.05); }
+/* Interactive Upload Area */
+.upload-zone { border: 2px dashed rgba(124,58,237,0.4); background: rgba(124,58,237,0.03); margin: 32px; border-radius: 20px; padding: 64px 24px; text-align: center; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: block; }
+.upload-zone:hover, .upload-zone.dragover { border-color: var(--violet-light); background: rgba(124,58,237,0.08); transform: scale(1.005); }
+.upload-zone.audio-ready { border-color: rgba(6,182,212,0.4); background: rgba(6,182,212,0.03); }
+.upload-zone.has-file { border-color: var(--green); background: rgba(16,185,129,0.05); }
 
-/* Upload Zone */
-.upload-zone {
-  border: 2px dashed rgba(124,58,237,0.3);
-  background: rgba(124,58,237,0.04);
-  margin: 28px 28px 0;
-  border-radius: 18px;
-  padding: 56px 24px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  position: relative;
-  overflow: hidden;
-}
-.upload-zone::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 50% 0%, rgba(124,58,237,0.08) 0%, transparent 60%);
-  pointer-events: none;
-}
-.upload-zone.dragover {
-  border-color: var(--violet-light);
-  background: rgba(124,58,237,0.1);
-  transform: scale(1.01);
-}
-.upload-zone.audio-ready {
-  border-color: rgba(6,182,212,0.4);
-  background: rgba(6,182,212,0.05);
-}
-.upload-zone.has-file {
-  border-color: rgba(16,185,129,0.5);
-  background: rgba(16,185,129,0.05);
-}
+.uz-icon { font-size: 4rem; display: block; margin-bottom: 16px; filter: drop-shadow(0 0 15px rgba(124,58,237,0.4)); }
+.uz-title { font-family: 'Syne', sans-serif; font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: 8px; }
+.uz-sub { font-size: 0.95rem; color: var(--muted2); margin-bottom: 24px; }
+.uz-btn { display: inline-block; background: var(--violet); color: white; font-weight: 800; font-size: 0.95rem; padding: 14px 32px; border-radius: 50px; border: none; cursor: pointer; transition: all 0.2s; box-shadow: 0 10px 25px -5px rgba(124,58,237,0.5); }
+.uz-btn:hover { background: var(--violet-light); transform: translateY(-2px); }
+.uz-btn.cyan { background: var(--cyan); box-shadow: 0 10px 25px -5px rgba(6,182,212,0.5); }
 
-.uz-icon { font-size: 3.5rem; display: block; margin-bottom: 14px; animation: float 3s ease-in-out infinite; }
-@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
-.uz-title { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 800; color: var(--text); margin-bottom: 6px; }
-.uz-sub { font-size: 0.88rem; color: var(--muted2); margin-bottom: 18px; }
-.uz-btn {
-  display: inline-block;
-  background: var(--violet);
-  color: white;
-  font-weight: 700;
-  font-size: 0.88rem;
-  padding: 10px 24px;
-  border-radius: 40px;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s;
-  box-shadow: 0 4px 16px rgba(124,58,237,0.4);
-}
-.uz-btn:hover { background: var(--violet-light); transform: translateY(-1px); }
-.uz-btn.cyan { background: var(--cyan); box-shadow: 0 4px 16px rgba(6,182,212,0.35); }
-.uz-btn.cyan:hover { background: #22d3ee; }
+.file-badge { display: none; margin: 0 32px 20px; padding: 18px 24px; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); border-radius: 16px; font-size: 1rem; font-weight: 700; color: var(--green); justify-content: space-between; align-items: center; }
 
-.file-badge {
-  display: none;
-  margin: 14px 28px 0;
-  padding: 13px 18px;
-  background: rgba(16,185,129,0.1);
-  border: 1px solid rgba(16,185,129,0.25);
-  border-radius: 12px;
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--green);
-}
+/* Control Dashboard */
+.controls-area { padding: 10px 32px 32px; }
+.ctrl-label { font-size: 0.8rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--cyan); margin-bottom: 18px; display: block; }
+.ctrl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
 
-/* Controls */
-.controls-area {
-  padding: 24px 28px;
-}
-.ctrl-label {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--muted2);
-  margin-bottom: 14px;
-  display: block;
-}
-.ctrl-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-}
-@media(max-width:580px){ .ctrl-grid{ grid-template-columns:1fr; } }
+.field-wrap { display: flex; flex-direction: column; gap: 8px; }
+.field-label { font-size: 0.85rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
 
-.field-wrap { display: flex; flex-direction: column; gap: 7px; }
-.field-label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--muted);
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-}
+select { width: 100%; padding: 16px; background: rgba(0,0,0,0.4); border: 1.5px solid var(--border); border-radius: 14px; color: var(--text); font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 700; cursor: pointer; transition: 0.2s; }
+select:focus { outline: none; border-color: var(--violet-light); box-shadow: 0 0 15px rgba(124,58,237,0.2); }
 
-select {
-  width: 100%;
-  padding: 12px 14px;
-  background: var(--surface2);
-  border: 1.5px solid var(--border2);
-  border-radius: 12px;
-  color: var(--text);
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.92rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s;
-  appearance: auto;
-}
-select:focus { outline: none; border-color: var(--violet-light); box-shadow: 0 0 0 3px rgba(124,58,237,0.15); }
-select:disabled { opacity: 0.4; cursor: default; }
+/* Progress Execution Dashboard */
+.progress-wrap { display: none; margin: 0 32px 32px; padding: 28px; background: rgba(0,0,0,0.5); border: 1px solid var(--border); border-radius: 20px; }
+.prog-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; font-weight: 800; font-size: 1.05rem; }
+.prog-pct { color: var(--cyan); }
+.prog-track { width: 100%; height: 10px; background: rgba(255,255,255,0.05); border-radius: 50px; overflow: hidden; }
+.prog-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--violet), var(--cyan)); transition: width 0.3s ease; }
+.prog-tip { margin-top: 14px; font-size: 0.85rem; color: var(--muted2); text-align: center; }
 
-/* Progress */
-.progress-wrap {
-  display: none;
-  margin: 0 28px;
-  padding: 22px;
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  margin-bottom: 0;
-}
-.prog-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
-.prog-label { font-size: 0.88rem; font-weight: 700; color: var(--text); }
-.prog-pct { font-size: 0.88rem; font-weight: 700; color: var(--violet-light); }
-.prog-track {
-  width: 100%;
-  height: 6px;
-  background: var(--surface);
-  border-radius: 10px;
-  overflow: hidden;
-}
-.prog-fill {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(90deg, var(--violet), var(--cyan));
-  border-radius: 10px;
-  transition: width 0.4s ease;
-}
-.prog-tip {
-  margin-top: 10px;
-  font-size: 0.8rem;
-  color: var(--muted2);
-  text-align: center;
-  animation: tipfade 3s ease-in-out infinite;
-}
-@keyframes tipfade { 0%,100%{opacity:1} 50%{opacity:0.5} }
+/* Trigger CTA */
+.action-btn { display: block; width: calc(100% - 64px); margin: 0 32px 32px; padding: 22px; border-radius: 18px; font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 800; color: white; border: none; cursor: pointer; transition: all 0.3s ease; background: linear-gradient(135deg, var(--violet) 0%, #4f46e5 100%); box-shadow: 0 15px 35px -10px rgba(124,58,237,0.6); }
+.action-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+.action-btn:disabled { background: var(--surface2); color: var(--muted2); box-shadow: none; cursor: wait; transform: none; opacity: 0.5; }
+.action-btn.audio-mode { background: linear-gradient(135deg, #0891b2 0%, var(--cyan) 100%); box-shadow: 0 15px 35px -10px rgba(6,182,212,0.6); }
 
-/* Action Button */
-.action-btn {
-  display: block;
-  width: calc(100% - 56px);
-  margin: 24px 28px 28px;
-  padding: 18px;
-  border-radius: 16px;
-  font-family: 'Syne', sans-serif;
-  font-size: 1.05rem;
-  font-weight: 800;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: 0.25s;
-  background: linear-gradient(135deg, var(--violet) 0%, #6d28d9 100%);
-  box-shadow: 0 8px 24px rgba(124,58,237,0.4);
-  letter-spacing: 0.2px;
-}
-.action-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(124,58,237,0.5); }
-.action-btn:active { transform: translateY(0); }
-.action-btn:disabled { background: var(--surface2); color: var(--muted2); box-shadow: none; cursor: not-allowed; transform: none; }
-.action-btn.audio-mode { background: linear-gradient(135deg, #0891b2 0%, var(--cyan) 100%); box-shadow: 0 8px 24px rgba(6,182,212,0.35); }
-.action-btn.audio-mode:hover { box-shadow: 0 12px 32px rgba(6,182,212,0.45); }
+/* ─── VALUE FEATURES ─── */
+.features { max-width: 1040px; margin: 20px auto 0; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.feat { background: rgba(17, 24, 39, 0.6); border: 1px solid var(--border); border-radius: 24px; padding: 32px; transition: transform 0.3s; }
+.feat:hover { transform: translateY(-6px); border-color: var(--border-glow); }
+.feat-icon { font-size: 2.5rem; margin-bottom: 16px; display: block; }
+.feat-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.2rem; color: #fff; margin-bottom: 10px; }
+.feat-desc { font-size: 0.95rem; color: var(--muted); }
 
-/* ─── FEATURES ─── */
-.features {
-  max-width: 960px;
-  margin: 48px auto 0;
-  padding: 0 24px;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 16px;
-  animation: fadeUp 0.7s 0.2s ease both;
-}
-@media(max-width:640px){ .features{ grid-template-columns:1fr; } }
+/* ─── DEEP SEMANTIC DOCUMENTATION MATRIX ─── */
+.doc-matrix { max-width: 1040px; margin: 60px auto 0; padding: 0 20px; }
+.doc-node-card { background: #0f172a; border-radius: 28px; border: 1px solid rgba(255,255,255,0.06); padding: 45px; margin-bottom: 35px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+.doc-node-card h2 { font-family: 'Syne', sans-serif; font-size: 1.8rem; font-weight: 800; margin-bottom: 20px; color: #fff; border-left: 5px solid var(--violet-light); padding-left: 18px; }
+.doc-node-card h3 { font-size: 1.25rem; font-weight: 700; margin: 30px 0 12px; color: var(--cyan); }
+.doc-node-card p { color: var(--muted); margin-bottom: 18px; font-size: 1.02rem; }
+.doc-node-card ul, .doc-node-card ol { margin-left: 24px; margin-bottom: 24px; color: var(--muted); }
+.doc-node-card li { margin-bottom: 10px; }
 
-.feat {
-  background: var(--card);
-  border: 1px solid var(--border2);
-  border-radius: 20px;
-  padding: 26px 22px;
-  transition: transform 0.2s;
-}
-.feat:hover { transform: translateY(-4px); }
-.feat-icon { font-size: 2rem; margin-bottom: 12px; display: block; }
-.feat-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 0.95rem; color: var(--text); margin-bottom: 7px; }
-.feat-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+/* Exhaustive Data Tables */
+.data-table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.95rem; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); }
+.data-table th, .data-table td { padding: 16px 20px; text-align: left; }
+.data-table th { background: #1e293b; color: #fff; font-weight: 800; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+.data-table td { background: rgba(15, 23, 42, 0.5); border-bottom: 1px solid rgba(255,255,255,0.05); color: var(--muted); font-weight: 500; }
 
-/* ─── HOW IT WORKS ─── */
-.steps-section {
-  max-width: 960px;
-  margin: 52px auto 0;
-  padding: 0 24px;
-  animation: fadeUp 0.7s 0.25s ease both;
-}
-.sec-title {
-  font-family: 'Syne', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--text);
-  letter-spacing: -0.5px;
-  margin-bottom: 6px;
-}
-.sec-sub { font-size: 0.95rem; color: var(--muted); margin-bottom: 28px; }
+/* ─── BRAND FOOTER UNIT ─── */
+.brand-hero-card { background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%); border: 1px solid var(--border-glow); border-radius: 32px; padding: 50px; display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap; margin-bottom: 40px; }
+.brand-hero-card h2 { font-family: 'Syne', sans-serif; font-size: 2.4rem; font-weight: 800; letter-spacing: -1px; }
 
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 14px;
-}
-@media(max-width:700px){ .steps-grid{ grid-template-columns:1fr 1fr; } }
-
-.step {
-  background: var(--card);
-  border: 1px solid var(--border2);
-  border-radius: 18px;
-  padding: 22px 18px;
-  position: relative;
-  overflow: hidden;
-}
-.step::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--violet), var(--cyan));
-}
-.step-n {
-  font-family: 'Syne', sans-serif;
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: rgba(124,58,237,0.12);
-  line-height: 1;
-  margin-bottom: 10px;
-}
-.step-title { font-weight: 700; font-size: 0.88rem; color: var(--text); margin-bottom: 5px; }
-.step-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
-
-/* ─── SEO CONTENT ─── */
-.seo-wrap {
-  max-width: 960px;
-  margin: 52px auto 0;
-  padding: 0 24px;
-}
-
-.seo-card {
-  background: var(--card);
-  border: 1px solid var(--border2);
-  border-radius: 24px;
-  padding: 40px;
-  margin-bottom: 24px;
-  animation: fadeUp 0.6s 0.3s ease both;
-}
-
-.seo-card h2 {
-  font-family: 'Syne', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: var(--text);
-  letter-spacing: -0.3px;
-  margin-bottom: 14px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--border);
-}
-.seo-card h2:not(:first-child) { margin-top: 32px; }
-.seo-card h3 {
-  font-family: 'Syne', sans-serif;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--violet-light);
-  margin: 24px 0 10px;
-}
-.seo-card p { font-size: 0.95rem; color: var(--muted); margin-bottom: 14px; line-height: 1.75; }
-.seo-card strong { color: var(--text); }
-.seo-card ul { padding-left: 18px; }
-.seo-card li { font-size: 0.95rem; color: var(--muted); margin-bottom: 10px; line-height: 1.65; }
-
-/* Comparison table */
-.cmp-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 18px 0;
-  font-size: 0.88rem;
-  border-radius: 12px;
-  overflow: hidden;
-}
-.cmp-table th {
-  background: var(--surface2);
-  color: var(--muted);
-  font-weight: 700;
-  font-size: 0.78rem;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  padding: 12px 16px;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
-}
-.cmp-table td {
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--border);
-  color: var(--muted);
-}
-.cmp-table tr:last-child td { border-bottom: none; }
-.cmp-table tr:hover td { background: rgba(255,255,255,0.02); }
-.badge-yes { display: inline-block; font-size: 0.72rem; font-weight: 700; background: rgba(16,185,129,0.15); color: var(--green); border: 1px solid rgba(16,185,129,0.25); padding: 2px 9px; border-radius: 20px; }
-.badge-no  { display: inline-block; font-size: 0.72rem; font-weight: 700; background: rgba(239,68,68,0.12); color: #f87171; border: 1px solid rgba(239,68,68,0.2); padding: 2px 9px; border-radius: 20px; }
-
-/* FAQ */
-.faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 4px; }
-.faq-item {
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
-}
-.faq-q {
-  width: 100%;
-  text-align: left;
-  background: none;
-  border: none;
-  padding: 18px 20px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.93rem;
-  font-weight: 700;
-  color: var(--text);
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
-.faq-arrow { color: var(--violet-light); transition: transform 0.25s; font-size: 0.8rem; flex-shrink: 0; }
-.faq-item.open .faq-arrow { transform: rotate(180deg); }
-.faq-a { display: none; padding: 0 20px 18px; font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
-.faq-item.open .faq-a { display: block; }
-
-/* ─── BRAND SECTION ─── */
-.brand-section {
-  max-width: 960px;
-  margin: 0 auto 20px;
-  padding: 0 24px;
-}
-.brand-card {
-  background: linear-gradient(135deg, var(--surface) 0%, #0d1a3a 100%);
-  border: 1px solid rgba(124,58,237,0.2);
-  border-radius: 24px;
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-  box-shadow: 0 0 60px rgba(124,58,237,0.1);
-}
-.brand-name {
-  font-family: 'Syne', sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--text);
-  letter-spacing: -1px;
-  margin-bottom: 10px;
-}
-.brand-name em { color: var(--violet-light); font-style: normal; }
-.brand-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.65; max-width: 440px; }
-.brand-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
-.brand-pill {
-  font-size: 0.75rem;
-  font-weight: 600;
-  background: rgba(124,58,237,0.15);
-  color: #a78bfa;
-  border: 1px solid rgba(124,58,237,0.2);
-  padding: 5px 12px;
-  border-radius: 20px;
-}
-.brand-glyph {
-  font-size: 5rem;
-  animation: spin-slow 12s linear infinite;
-}
-@keyframes spin-slow { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
-
-/* ─── FOOTER ─── */
-footer {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 24px 24px 48px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  border-top: 1px solid var(--border);
-  font-size: 0.82rem;
-  color: var(--muted2);
-}
-.footer-brand { font-weight: 700; color: var(--muted); }
-.footer-brand em { color: var(--violet-light); font-style: normal; }
-
-/* Scroll animation */
-.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+footer { max-width: 1040px; margin: 0 auto; padding: 40px 20px 60px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; font-size: 0.9rem; color: var(--muted2); }
+footer a { color: var(--muted); text-decoration: none; font-weight: 600; }
 </style>
 </head>
 <body>
 
-<!-- ─── NAV ─── -->
 <nav class="site-nav">
   <div class="nav-inner">
-    <a href="https://orbitwebtools.github.io/" class="brand-link" rel="home">
+    <a href="https://orbitwebtools.github.io/" class="brand-link">
       <span class="brand-text">Orbit<em>Web</em>Tools</span>
-      <span class="brand-tag">Free</span>
+      <span class="brand-tag">PRO Suite</span>
     </a>
     <div class="nav-status">
       <span class="status-dot"></span>
-      Video never leaves your device
+      100% Client-Side Privacy
     </div>
   </div>
 </nav>
 
-<!-- ─── HERO ─── -->
 <section class="hero">
-  <div class="hero-eyebrow">🎬 Professional Creator Tools — 100% Free</div>
+  <div class="hero-eyebrow">⚡ Next-Gen WebAssembly Engine Engine</div>
   <h1>Enhance <span class="v">Reels & Shorts</span><br>to <span class="c">4K Quality</span> Free</h1>
-  <p class="hero-sub">Boost Instagram Reels and YouTube Shorts to crystal-clear 4K. Extract MP3 or WAV audio from any video. Everything happens in your browser — your video is never uploaded.</p>
+  <p class="hero-sub">Upscale blurry social media clips to crisp 4K resolution or extract high-fidelity 320kbps MP3 audio directly in your web browser. Zero uploads, infinite privacy.</p>
+  
   <div class="trust-row">
-    <div class="t-chip">🔒 100% Private</div>
-    <div class="t-chip">⚡ Works Offline</div>
-    <div class="t-chip">📱 Mobile Ready</div>
-    <div class="t-chip">🚫 No Watermark</div>
-    <div class="t-chip">♾️ No File Size Limit</div>
+    <div class="t-chip">🔒 Zero Server Storage</div>
+    <div class="t-chip">⚡ WebAssembly Accelerated</div>
+    <div class="t-chip">📱 Mobile Chrome & Safari Ready</div>
+    <div class="t-chip">🚫 Zero Watermarks</div>
   </div>
 </section>
 
-<!-- ─── MAIN TOOL CARD ─── -->
 <div class="app-wrap">
-  <div class="tool-card">
+  <main class="tool-card">
 
-    <!-- Mode Tabs -->
     <div class="mode-tabs">
       <button class="mode-tab active" id="tabVideo" onclick="switchMode('video')">🎬 Enhance Video to 4K</button>
       <button class="mode-tab" id="tabAudio" onclick="switchMode('audio')">🎵 Extract Audio (MP3 / WAV)</button>
     </div>
 
-    <!-- Upload Zone -->
-    <div class="upload-zone" id="dropArea" role="button" tabindex="0" aria-label="Upload video file">
-      <span class="uz-icon" id="uzIcon">🎬</span>
-      <div class="uz-title" id="uzTitle">Drop Your Video Here</div>
-      <div class="uz-sub">MP4, MOV, MKV — any size</div>
-      <button class="uz-btn" id="uzBtn" type="button">Choose Video File</button>
-    </div>
-    <input type="file" id="fileInput" accept="video/*" style="display:none" aria-label="Select video file">
-    <div class="file-badge" id="fileBadge"></div>
+    <label class="upload-zone" id="dropArea">
+      <span class="uz-icon" id="uzIcon">🎞️</span>
+      <div class="uz-title" id="uzTitle">Drop Raw Video Payload Here</div>
+      <div class="uz-sub">Supports MP4, MOV, MKV binary arrays (No filesize limits)</div>
+      <span class="uz-btn" id="uzBtn">Browse Filesystem</span>
+      <input type="file" id="fileInput" accept="video/mp4, video/mov, video/quicktime, video/x-matroska" hidden>
+    </label>
 
-    <!-- Video Controls -->
+    <div class="file-badge" id="fileBadge" style="display:none;"></div>
+
     <div class="controls-area" id="videoControls">
-      <span class="ctrl-label">🎚 Enhancement Settings</span>
+      <span class="ctrl-label">🎚 Spatial Upscaling Matrix</span>
       <div class="ctrl-grid">
         <div class="field-wrap">
-          <label class="field-label">Enhancement Level</label>
+          <label class="field-label">Sharpening Filter Intensity</label>
           <select id="sharpSelect">
-            <option value="3" selected>Smart Enhance (Recommended)</option>
-            <option value="5">Aggressive Sharpen (Very blurry videos)</option>
+            <option value="3" selected>Smart Lanczos Enhancement (Recommended)</option>
+            <option value="5">Aggressive Unsharp Masking (For low-res footage)</option>
           </select>
         </div>
         <div class="field-wrap">
-          <label class="field-label">Output Resolution</label>
+          <label class="field-label">Target Canvas Output</label>
           <select id="resSelect">
-            <option value="2160:3840" selected>4K Ultra HD (2160×3840)</option>
-            <option value="1440:2560">2K QHD (1440×2560)</option>
-            <option value="1080:1920">1080p Full HD (Keep original)</option>
+            <option value="2160:3840" selected>4K Ultra HD Vertical (2160×3840)</option>
+            <option value="1440:2560">2K QHD Vertical (1440×2560)</option>
+            <option value="1080:1920">1080p FHD Vertical (1080×1920)</option>
           </select>
         </div>
         <div class="field-wrap">
-          <label class="field-label">Output Video Format</label>
+          <label class="field-label">Container Codec Wrapper</label>
           <select id="vidFormat">
-            <option value="mp4" selected>MP4 — Best for Instagram/YouTube</option>
-            <option value="mov">MOV — Apple / iPhone Standard</option>
-            <option value="mkv">MKV — Lossless Archive</option>
+            <option value="mp4" selected>MP4 (H.264 / AAC) — Universal Social</option>
+            <option value="mov">MOV (QuickTime) — iOS Native</option>
           </select>
         </div>
       </div>
     </div>
 
-    <!-- Audio Controls -->
     <div class="controls-area" id="audioControls" style="display:none">
-      <span class="ctrl-label">🎵 Audio Extraction Settings</span>
+      <span class="ctrl-label">🎵 Digital Audio Demuxing Matrix</span>
       <div class="ctrl-grid">
         <div class="field-wrap">
-          <label class="field-label">Output Audio Format</label>
+          <label class="field-label">Audio Codec Specification</label>
           <select id="audFormat">
-            <option value="mp3" selected>MP3 — 320kbps (Standard Sharing)</option>
-            <option value="wav">WAV — Lossless Studio Quality</option>
+            <option value="mp3" selected>MP3 — Constant Bitrate (320 kbps)</option>
+            <option value="wav">WAV — Lossless Uncompressed PCM</option>
           </select>
         </div>
         <div class="field-wrap">
-          <label class="field-label">Processing Engine</label>
+          <label class="field-label">Demuxing Backend</label>
           <select disabled>
-            <option>FFmpeg LAME (Active)</option>
+            <option>FFmpeg Audio Pipe (WebAssembly Sandbox)</option>
           </select>
         </div>
       </div>
     </div>
 
-    <!-- Progress Bar -->
     <div class="progress-wrap" id="progressWrap">
       <div class="prog-header">
-        <span class="prog-label" id="progLabel">Initialising engine...</span>
+        <span id="progLabel">Allocating WASM memory buffers...</span>
         <span class="prog-pct" id="progPct">0%</span>
       </div>
       <div class="prog-track">
         <div class="prog-fill" id="progFill"></div>
       </div>
-      <div class="prog-tip" id="progTip">⏳ Processing locally — please keep this tab open</div>
+      <div class="prog-tip" id="progTip">⏳ Keep browser tab active — device processor executing local transformation</div>
     </div>
 
-    <!-- Action Button -->
-    <button class="action-btn" id="actionBtn" type="button">🚀 Start Enhancing to 4K</button>
-
-  </div>
+    <button class="action-btn" id="actionBtn" type="button">🚀 START LOCAL 4K UPSCALING</button>
+  </main>
 </div>
 
-<!-- ─── FEATURES ─── -->
-<div class="features reveal">
-  <div class="feat">
-    <span class="feat-icon">🔬</span>
-    <div class="feat-title">Lanczos Upscaling</div>
-    <div class="feat-desc">Professional-grade Lanczos filtering — same algorithm used in Hollywood post-production — sharpens edges and injects pixel detail for crisp 4K output.</div>
-  </div>
-  <div class="feat">
-    <span class="feat-icon">🔒</span>
-    <div class="feat-title">Zero Upload Privacy</div>
-    <div class="feat-desc">WebAssembly (WASM) runs FFmpeg inside your browser. Your video file stays on your device. Nothing is sent to any server at any point.</div>
-  </div>
-  <div class="feat">
-    <span class="feat-icon">🎵</span>
-    <div class="feat-title">Lossless Audio Extract</div>
-    <div class="feat-desc">Strip MP3 at 320kbps or WAV at full lossless quality from any video. Perfect for podcasts, voiceovers, background music, and studio editing.</div>
-  </div>
-</div>
+<section class="doc-matrix">
+  
+  <article class="doc-node-card">
+    <h2>Algorithmic Mechanics: How Does 4K Reel Upscaling Work?</h2>
+    <p>Social media distribution engines (Instagram Reels, YouTube Shorts, TikTok) utilize aggressive transcoding pass pipelines. When a content creator ingests a standard 1080p video file, the platform server applies heavy spatial and temporal compression algorithms (such as H.264 or VP9 quantization) to preserve server storage bandwidth. This dramatically degrades visual crispness, introducing blocking artifacts around high-motion boundaries.</p>
+    <p><strong>OrbitWebTools</strong> mitigates this downsampling degradation via **Client-Side Lanczos Interpolation**. By upscaling raw frame dimensions to a native 4K canvas (2160×3840) prior to distribution ingest, the video file forces the social platform transcoding engine to sample from a massively higher spatial data density. The resulting transcoded video retains exceptionally crisp edge definitions and higher bitrate allocation weight.</p>
+  </article>
 
-<!-- ─── HOW IT WORKS ─── -->
-<div class="steps-section reveal">
-  <div class="sec-title">How to Enhance Reels Quality — 4 Steps</div>
-  <div class="sec-sub">Works the same way for MP4 to MP3 audio extraction</div>
-  <div class="steps-grid">
-    <div class="step">
-      <div class="step-n">01</div>
-      <div class="step-title">Upload Your Video</div>
-      <div class="step-desc">Click or drag your MP4, MOV or MKV Reel/Short into the upload area</div>
-    </div>
-    <div class="step">
-      <div class="step-n">02</div>
-      <div class="step-title">Choose Mode</div>
-      <div class="step-desc">Select "Enhance to 4K" for video quality boost, or "Extract Audio" for MP3/WAV</div>
-    </div>
-    <div class="step">
-      <div class="step-n">03</div>
-      <div class="step-title">Adjust Settings</div>
-      <div class="step-desc">Pick your enhancement level, output resolution, and file format</div>
-    </div>
-    <div class="step">
-      <div class="step-n">04</div>
-      <div class="step-title">Download & Upload</div>
-      <div class="step-desc">Download your 4K video or audio file and upload to Instagram or YouTube</div>
-    </div>
-  </div>
-</div>
-
-<!-- ─── SEO ARTICLE ─── -->
-<div class="seo-wrap">
-
-  <article class="seo-card reveal">
-    <h2>Does Enhancing Reels to 4K Actually Get More Views?</h2>
-    <p>Yes — and here is exactly how it works. Instagram and YouTube both use video quality as a ranking signal when deciding which content to show to wider audiences. When you upload a 1080p video, the platform compresses it further during processing, which degrades quality. When you upload a 4K video, two things happen:</p>
-    <ul>
-      <li><strong>Less compression damage:</strong> The platform compresses from 4K down to display resolution, preserving more detail than compressing from 1080p.</li>
-      <li><strong>Quality signal boost:</strong> The algorithm reads the high-resolution metadata and tags your video as high-quality content, making it more likely to be recommended.</li>
-    </ul>
-    <p>This is why many top creators and digital marketers upscale their videos to 4K before uploading — even when the original footage is 1080p. Our tool does this using <strong>Lanczos filtering</strong>, the same upscaling method used in professional video editing software.</p>
-
-    <h2>OrbitWebTools vs Other Online Video Enhancers</h2>
-    <table class="cmp-table">
+  <article class="doc-node-card">
+    <h2>Social Media Platform Distribution Bitrate Standards Matrix</h2>
+    <p>To optimize algorithmic reach and prevent video packet drops during streaming ingestion, media files must strictly adhere to platform codec specifications. Below is our verified technical parameters matrix:</p>
+    
+    <table class="data-table">
       <thead>
         <tr>
-          <th>Feature</th>
-          <th>OrbitWebTools</th>
-          <th>Other Online Tools</th>
+          <th>Platform Target</th>
+          <th>Recommended Container</th>
+          <th>Target Resolution Grid</th>
+          <th>Optimal Audio Codec</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Video uploaded to server</td>
-          <td><span class="badge-yes">Never</span></td>
-          <td><span class="badge-no">Always</span></td>
+          <td><strong>Instagram Reels</strong></td>
+          <td>MP4 (H.264 / AVC)</td>
+          <td>2160 × 3840 (9:16 Aspect)</td>
+          <td>AAC-LC (256 kbps Stereo)</td>
         </tr>
         <tr>
-          <td>File size limit</td>
-          <td><span class="badge-yes">No limit</span></td>
-          <td><span class="badge-no">Usually 100MB</span></td>
+          <td><strong>YouTube Shorts</strong></td>
+          <td>MP4 / MOV (H.264)</td>
+          <td>2160 × 3840 (Vertical 4K)</td>
+          <td>AAC / MP3 (320 kbps)</td>
         </tr>
         <tr>
-          <td>Watermark on output</td>
-          <td><span class="badge-yes">No watermark</span></td>
-          <td><span class="badge-no">Free = watermark</span></td>
+          <td><strong>Facebook Reels</strong></td>
+          <td>MP4 Container</td>
+          <td>1080 × 1920 Minimum</td>
+          <td>Stereo AAC 128+ kbps</td>
         </tr>
         <tr>
-          <td>Works on mobile</td>
-          <td><span class="badge-yes">Yes, any browser</span></td>
-          <td><span class="badge-no">Often not supported</span></td>
-        </tr>
-        <tr>
-          <td>MP3 audio extraction</td>
-          <td><span class="badge-yes">Yes — 320kbps + WAV</span></td>
-          <td>Sometimes, with limits</td>
-        </tr>
-        <tr>
-          <td>Cost</td>
-          <td><span class="badge-yes">100% Free</span></td>
-          <td>Free tier is very limited</td>
+          <td><strong>Studio Audio Export</strong></td>
+          <td>WAV PCM Audio</td>
+          <td>Demuxed Audio Stream</td>
+          <td>16-bit / 44.1 kHz Uncompressed</td>
         </tr>
       </tbody>
     </table>
-
-    <h2>How to Extract MP3 from MP4 Video Online Free</h2>
-    <p>Extracting audio from a video is useful for many situations — saving a song from a downloaded video, extracting voiceover for a podcast, getting background music from a tutorial, or converting a video lecture into an audio file for offline listening.</p>
-    <p>Switch to the <strong>Extract Audio</strong> tab, upload your video, choose MP3 (for sharing) or WAV (for studio editing), and click Extract Audio. The tool uses FFmpeg's LAME encoder to produce 320kbps MP3 — the highest standard MP3 quality — or PCM WAV for full lossless audio.</p>
   </article>
 
-  <!-- FAQ -->
-  <article class="seo-card reveal">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false">
-          How to enhance Instagram Reels quality to 4K free online?
-          <span class="faq-arrow">▼</span>
-        </button>
-        <div class="faq-a">Open OrbitWebTools on your browser (mobile or PC). Upload your Reel video — MP4, MOV or MKV. Make sure "Enhance Video to 4K" tab is selected. Choose your sharpening level and output resolution (4K recommended). Click "Start Enhancing" and wait for processing. Download the enhanced video and upload it to Instagram. The tool uses Lanczos upscaling and unsharp masking to maximise visual quality.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false">
-          How to convert MP4 to MP3 free online without uploading?
-          <span class="faq-arrow">▼</span>
-        </button>
-        <div class="faq-a">Click the "Extract Audio (MP3/WAV)" tab at the top of the tool. Upload your MP4 video, select MP3 (320kbps) or WAV (lossless), and click "Extract Audio Now". Your audio file will be processed inside your browser and download automatically. Your video file is never sent to any server — everything runs using WebAssembly in your browser.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false">
-          Why is my Reel or Short looking blurry after uploading?
-          <span class="faq-arrow">▼</span>
-        </button>
-        <div class="faq-a">Instagram and YouTube compress every video they receive to reduce storage and streaming costs. If you upload a 1080p video, the platform compresses it significantly, which causes visible blurriness and loss of detail. Uploading in 4K gives the platform more data to work with — it compresses from 4K down to 1080p for display, which preserves far more sharpness and clarity than compressing 1080p directly. Use the "Aggressive Sharpen" option in this tool for footage that is already blurry.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false">
-          Does this tool work on Android mobile phones?
-          <span class="faq-arrow">▼</span>
-        </button>
-        <div class="faq-a">Yes. This tool works on Android Chrome and iOS Safari. However, very large video files (above 500MB) may be slow to process on older phones due to limited RAM. For large files, processing on a PC or laptop is recommended. Audio extraction works quickly even on mobile for most video sizes.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false">
-          Why does the tool ask me to keep the tab open during processing?
-          <span class="faq-arrow">▼</span>
-        </button>
-        <div class="faq-a">Because all video processing happens inside your browser tab using WebAssembly, your browser needs the tab to remain active to continue processing. If you switch to another app or the screen locks on mobile, the browser may pause or stop the processing. Keep the screen on and the tab active until the download starts. This is the trade-off for complete privacy — no server upload means the browser does all the work.</div>
-      </div>
-    </div>
+  <article class="doc-node-card">
+    <h2>Zero-Upload WebAssembly Privacy & Execution Architecture</h2>
+    <p>Typical online video converters process media by uploading multi-megabyte payloads to remote cloud clusters. This introduces severe data privacy risks, slow upload bottlenecks, and unauthorized server storage archiving. **OrbitWebTools eliminates cloud servers entirely.**</p>
+    <ul>
+      <li><strong>WASM Execution Sandbox:</strong> Our engine harnesses `coi-serviceworker` and **WebAssembly (WASM)** technology to run a compiled binary version of FFmpeg directly inside your device's web browser memory.</li>
+      <li><strong>Local System RAM Buffering:</strong> When you drag an MP4 or MOV file into our interface, the binary data remains isolated within your browser's local Virtual File System (VFS). Zero bytes are transmitted across internet network interfaces.</li>
+      <li><strong>Enterprise Security Compliance:</strong> Because processing occurs exclusively on your local processor threads, confidential corporate footage, unreleased musical tracks, and personal media remain 100% secure from external interception.</li>
+    </ul>
   </article>
 
-</div>
+  <article class="doc-node-card">
+    <h2>Exhaustive FAQ: MP4 to MP3 Extraction & Quality Enhancement</h2>
+    <h3>Why do blurry videos look significantly sharper after 4K processing?</h3>
+    <p>Our tool applies a dynamic `unsharp` convolution filter alongside Lanczos coordinate scaling. This mathematical filter identifies high-contrast pixel boundaries across adjacent video frames and accentuates edge contrast ratios without introducing artificial chromatic aberration.</p>
+    <h3>Can I extract studio-grade WAV audio from standard MP4 lectures or music videos?</h3>
+    <p>Yes. By switching to the **Extract Audio** dashboard tab, the WASM demuxing pipe strips the internal audio track cleanly from the video container. Selecting the WAV specification outputs pure, uncompressed Pulse-Code Modulation (PCM) audio identical to the master recorded stream.</p>
+  </article>
 
-<!-- ─── BRAND ─── -->
-<div class="brand-section reveal">
-  <div class="brand-card">
+  <div class="brand-hero-card" style="margin-top:60px;">
     <div>
-      <div class="brand-name">Orbit<em>Web</em>Tools</div>
-      <p class="brand-desc">Free, fast, private browser tools built for creators and digital professionals in India. No signup, no watermarks, no hidden fees. Every tool runs entirely in your browser.</p>
-      <div class="brand-pills">
-        <span class="brand-pill">🎬 Shorts & Reels Enhancer</span>
-        <span class="brand-pill">🎵 MP4 to MP3 Extractor</span>
-        <span class="brand-pill">📸 Passport Photo Maker</span>
-        <span class="brand-pill">🔒 Zero Upload Privacy</span>
-        <span class="brand-pill">🇮🇳 Made for India</span>
-      </div>
+      <span style="color:var(--cyan); font-weight:800; letter-spacing:1px; text-transform:uppercase; font-size:0.85rem;">Engineered By OrbitWebTools</span>
+      <h2 style="color:#fff; margin-top:8px;">Empowering Digital Creators Across India</h2>
+      <p style="color:var(--muted); margin-top:8px; max-width:550px;">OrbitWebTools delivers enterprise-grade client-side web applications completely free of cost. No subscriptions, zero watermarks, uncompromising privacy standards.</p>
     </div>
-    <div class="brand-glyph" aria-hidden="true">🛸</div>
+    <div style="font-size:4.5rem;">🛸</div>
   </div>
-</div>
 
-<!-- ─── FOOTER ─── -->
+</section>
+
 <footer>
-  <div class="footer-brand">Orbit<em>Web</em>Tools</div>
-  <div>© 2026 OrbitWebTools — Free Tools for Indian Creators</div>
-  <div>Built with ❤️ for Bharat</div>
+  <div>© 2026 <strong>OrbitWebTools</strong> • Client-Side WASM Suite</div>
+  <div>
+    <a href="https://orbitwebtools.github.io/">Official Portal</a> • 
+    <a href="https://orbitwebtools.github.io/image-resizer-20kb/">Image Resizer 20KB</a>
+  </div>
 </footer>
 
 <script>
-// ─── FFmpeg setup ───
+// ─── FFmpeg Engine Initialization ───
 const { createFFmpeg, fetchFile } = FFmpeg;
 const ffmpeg = createFFmpeg({ log: false });
 
-// Pre-load engine
 (async () => {
-  try { if (!ffmpeg.isLoaded()) await ffmpeg.load(); } catch(e) { console.warn('FFmpeg preload deferred.'); }
+  try { if (!ffmpeg.isLoaded()) await ffmpeg.load(); } catch(e) { console.warn('WASM pre-allocation deferred.'); }
 })();
 
-// ─── Elements ───
-const dropArea    = document.getElementById('dropArea');
-const fileInput   = document.getElementById('fileInput');
-const fileBadge   = document.getElementById('fileBadge');
-const actionBtn   = document.getElementById('actionBtn');
-const progressWrap= document.getElementById('progressWrap');
-const progFill    = document.getElementById('progFill');
-const progLabel   = document.getElementById('progLabel');
-const progPct     = document.getElementById('progPct');
-const progTip     = document.getElementById('progTip');
-const uzIcon      = document.getElementById('uzIcon');
-const uzTitle     = document.getElementById('uzTitle');
-const uzBtn       = document.getElementById('uzBtn');
+// DOM Node Mapping
+const dropArea     = document.getElementById('dropArea');
+const fileInput    = document.getElementById('fileInput');
+const fileBadge    = document.getElementById('fileBadge');
+const actionBtn    = document.getElementById('actionBtn');
+const progressWrap = document.getElementById('progressWrap');
+const progFill     = document.getElementById('progFill');
+const progLabel    = document.getElementById('progLabel');
+const progPct      = document.getElementById('progPct');
+const progTip      = document.getElementById('progTip');
+const uzIcon       = document.getElementById('uzIcon');
+const uzTitle      = document.getElementById('uzTitle');
+const uzBtn        = document.getElementById('uzBtn');
 
-let currentMode = 'video';
-let currentFile = null;
+let activeAppMode = 'video';
+let ingestedMediaBlob = null;
 
-const tips = [
-  '⚡ Processing locally — no server involved',
-  '🔒 Your video never leaves your device',
-  '🔥 Applying Lanczos upscaling filters...',
-  '⏳ Keep this tab open — almost there',
-  '🎬 Boosting quality for social algorithms...'
+const processingStatusTips = [
+  '⚡ Executing local WebAssembly threads...',
+  '🔒 Payload isolated in local RAM — Zero network routing',
+  '🔥 Applying spatial Lanczos interpolation kernels...',
+  '⏳ Device processor rendering target codec structures...',
+  '🎬 Optimizing bitrate weights for social distribution...'
 ];
 
-// ─── Mode switch ───
-function switchMode(mode) {
-  currentMode = mode;
+function switchMode(modeTarget) {
+  activeAppMode = modeTarget;
+  document.getElementById('tabVideo').classList.toggle('active', modeTarget === 'video');
+  document.getElementById('tabAudio').classList.toggle('active', modeTarget === 'audio');
+  document.getElementById('tabAudio').classList.toggle('audio-mode', modeTarget === 'audio');
 
-  const tabV = document.getElementById('tabVideo');
-  const tabA = document.getElementById('tabAudio');
-  const vCtrl = document.getElementById('videoControls');
-  const aCtrl = document.getElementById('audioControls');
+  document.getElementById('videoControls').style.display = modeTarget === 'video' ? 'block' : 'none';
+  document.getElementById('audioControls').style.display = modeTarget === 'audio' ? 'block' : 'none';
 
-  tabV.classList.toggle('active', mode === 'video');
-  tabA.classList.toggle('active', mode === 'audio');
-  tabA.classList.toggle('audio-mode', mode === 'audio');
-
-  vCtrl.style.display = mode === 'video' ? 'block' : 'none';
-  aCtrl.style.display = mode === 'audio' ? 'block' : 'none';
-
-  if (mode === 'video') {
-    uzIcon.textContent = '🎬';
+  if (modeTarget === 'video') {
+    uzIcon.textContent = '🎞️';
     uzBtn.className = 'uz-btn';
     actionBtn.className = 'action-btn';
-    actionBtn.textContent = '🚀 Start Enhancing to 4K';
+    actionBtn.textContent = '🚀 START LOCAL 4K UPSCALING';
     dropArea.classList.remove('audio-ready');
   } else {
     uzIcon.textContent = '🎵';
     uzBtn.className = 'uz-btn cyan';
     actionBtn.className = 'action-btn audio-mode';
-    actionBtn.textContent = '🎵 Extract Audio Now';
+    actionBtn.textContent = '🎵 EXTRACT AUDIO STREAM NOW';
     dropArea.classList.add('audio-ready');
   }
 }
 
-// ─── File selection ───
+// Ingestion Event Listeners
 dropArea.addEventListener('click', () => fileInput.click());
-dropArea.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') fileInput.click(); });
-dropArea.addEventListener('dragover', e => { e.preventDefault(); dropArea.classList.add('dragover'); });
-dropArea.addEventListener('dragleave', () => dropArea.classList.remove('dragover'));
+dropArea.addEventListener('dragover', e => { e.preventDefault(); dropArea.style.borderColor = 'var(--cyan)'; });
+dropArea.addEventListener('dragleave', () => dropArea.style.borderColor = 'rgba(124,58,237,0.4)');
 dropArea.addEventListener('drop', e => {
   e.preventDefault();
-  dropArea.classList.remove('dragover');
-  if (e.dataTransfer.files.length) setFile(e.dataTransfer.files[0]);
+  dropArea.style.borderColor = 'rgba(124,58,237,0.4)';
+  if (e.dataTransfer.files.length) handleMediaIngest(e.dataTransfer.files[0]);
 });
-fileInput.addEventListener('change', e => {
-  if (e.target.files.length) setFile(e.target.files[0]);
-});
+fileInput.addEventListener('change', e => { if (e.target.files.length) handleMediaIngest(e.target.files[0]); });
 
-function setFile(file) {
-  if (!file.type.startsWith('video/')) {
-    alert('Please upload a valid video file — MP4, MOV, or MKV.');
-    return;
-  }
-  currentFile = file;
-  const mb = (file.size / 1024 / 1024).toFixed(1);
-  fileBadge.style.display = 'block';
-  fileBadge.innerHTML = `✅ <b>${file.name}</b> &nbsp;(${mb} MB) — ready to process`;
+function handleMediaIngest(mediaFile) {
+  if (!mediaFile.type.startsWith('video/')) return alert('Operational Exception: Target payload must be a valid video stream container (MP4, MOV, MKV).');
+  ingestedMediaBlob = mediaFile;
+  const mbAllocation = (mediaFile.size / 1024 / 1024).toFixed(2);
+  fileBadge.style.display = 'flex';
+  fileBadge.innerHTML = `<span>✅ <strong>${mediaFile.name}</strong> (${mbAllocation} MB)</span><span style="font-size:0.8rem; text-transform:uppercase; color:#fff;">Buffered</span>`;
   dropArea.classList.add('has-file');
-  uzTitle.textContent = 'File selected — adjust settings below';
+  uzTitle.textContent = 'Payload Ingested Successfully';
 }
 
-// ─── Processing ───
+// WASM Transformation Pipeline
 actionBtn.addEventListener('click', async () => {
-  if (!currentFile) { alert('Please select a video file first.'); return; }
+  if (!ingestedMediaBlob) return alert('System Operation Blocked: Please ingest a valid video asset payload first.');
 
   actionBtn.disabled = true;
   progressWrap.style.display = 'block';
 
-  let pct = 0;
-  const fakeProg = setInterval(() => {
-    if (pct < 85) { pct += Math.random() * 3; updateProg(pct, 'Processing...'); }
-  }, 600);
+  let syntheticProgress = 0;
+  const syntheticInterval = setInterval(() => {
+    if (syntheticProgress < 88) { syntheticProgress += Math.random() * 2.5; updateUIProgress(syntheticProgress, 'Transcoding active...'); }
+  }, 500);
 
   const tipInterval = setInterval(() => {
-    progTip.textContent = tips[Math.floor(Math.random() * tips.length)];
-  }, 4000);
+    progTip.textContent = processingStatusTips[Math.floor(Math.random() * processingStatusTips.length)];
+  }, 3500);
 
   try {
     if (!ffmpeg.isLoaded()) {
-      updateProg(5, 'Loading processing engine...');
+      updateUIProgress(8, 'Allocating Virtual WASM Sandbox...');
       await ffmpeg.load();
     }
 
     ffmpeg.setProgress(({ ratio }) => {
-      const real = Math.max(0, Math.min(100, Math.round(ratio * 100)));
-      if (real > 0) { clearInterval(fakeProg); updateProg(real, 'Processing...'); }
+      const actualRatio = Math.max(0, Math.min(100, Math.round(ratio * 100)));
+      if (actualRatio > 0) { clearInterval(syntheticInterval); updateUIProgress(actualRatio, 'Rendering frames...'); }
     });
 
-    updateProg(pct, 'Reading file...');
-    ffmpeg.FS('writeFile', 'input', await fetchFile(currentFile));
+    updateUIProgress(syntheticProgress, 'Ingesting binary stream into WASM VFS...');
+    ffmpeg.FS('writeFile', 'input_pipe', await fetchFile(ingestedMediaBlob));
 
-    let outFile = '';
-    let mime = '';
+    let outputFilename = '', targetMime = '';
 
-    if (currentMode === 'video') {
-      const sharp  = document.getElementById('sharpSelect').value;
-      const res    = document.getElementById('resSelect').value;
-      const format = document.getElementById('vidFormat').value;
-      outFile = `OrbitWebTools_4K_${Date.now()}.${format}`;
-      mime = `video/${format}`;
+    if (activeAppMode === 'video') {
+      const sharpenVal = document.getElementById('sharpSelect').value;
+      const resolutionVal = document.getElementById('resSelect').value;
+      const formatVal = document.getElementById('vidFormat').value;
+      outputFilename = `OrbitWebTools_4K_${Date.now()}.${formatVal}`;
+      targetMime = `video/${formatVal}`;
 
       await ffmpeg.run(
-        '-i', 'input',
-        '-vf', `scale=${res}:flags=lanczos,unsharp=5:5:${sharp}:3:3:0.0`,
+        '-i', 'input_pipe',
+        '-vf', `scale=${resolutionVal}:flags=lanczos,unsharp=5:5:${sharpenVal}:3:3:0.0`,
         '-c:v', 'libx264',
         '-preset', 'ultrafast',
-        '-crf', '23',
-        '-movflags', 'faststart',
+        '-crf', '22',
+        '-movflags', '+faststart',
         '-threads', '4',
-        outFile
+        outputFilename
       );
     } else {
-      const format = document.getElementById('audFormat').value;
-      outFile = `OrbitWebTools_Audio_${Date.now()}.${format}`;
-      mime = `audio/${format}`;
+      const audioFormatVal = document.getElementById('audFormat').value;
+      outputFilename = `OrbitWebTools_Audio_${Date.now()}.${audioFormatVal}`;
+      targetMime = `audio/${audioFormatVal}`;
 
-      if (format === 'mp3') {
-        await ffmpeg.run('-i', 'input', '-vn', '-c:a', 'libmp3lame', '-q:a', '2', outFile);
+      if (audioFormatVal === 'mp3') {
+        await ffmpeg.run('-i', 'input_pipe', '-vn', '-c:a', 'libmp3lame', '-b:a', '320k', outputFilename);
       } else {
-        await ffmpeg.run('-i', 'input', '-vn', '-c:a', 'pcm_s16le', outFile);
+        await ffmpeg.run('-i', 'input_pipe', '-vn', '-c:a', 'pcm_s16le', outputFilename);
       }
     }
 
-    const data = ffmpeg.FS('readFile', outFile);
-    const url  = URL.createObjectURL(new Blob([data.buffer], { type: mime }));
-    const a    = document.createElement('a');
-    a.href = url; a.download = outFile; a.click();
+    const compiledBinaryBuffer = ffmpeg.FS('readFile', outputFilename);
+    const objectBlobURL = URL.createObjectURL(new Blob([compiledBinaryBuffer.buffer], { type: targetMime }));
+    
+    const virtualDownloadTrigger = document.createElement('a');
+    virtualDownloadTrigger.href = objectBlobURL;
+    virtualDownloadTrigger.download = outputFilename;
+    virtualDownloadTrigger.click();
 
-    // Success state
-    clearInterval(fakeProg);
-    updateProg(100, '✅ Done! Downloading...');
-    progFill.style.background = '#10b981';
-    progTip.textContent = '✨ File downloaded. Process another video below.';
-    actionBtn.textContent = currentMode === 'video' ? '✨ Enhance Another Video' : '✨ Extract Another Audio';
-    document.title = 'Done! | OrbitWebTools';
+    clearInterval(syntheticInterval);
+    updateUIProgress(100, '✅ Transformation Complete!');
+    progFill.style.background = 'var(--green)';
+    progTip.textContent = '✨ Asset saved directly to local storage filesystem.';
+    actionBtn.textContent = activeAppMode === 'video' ? '✨ UPSCALE ANOTHER REEL' : '✨ EXTRACT ANOTHER AUDIO STREAM';
 
-  } catch (err) {
-    console.error(err);
-    clearInterval(fakeProg);
-    progLabel.textContent = '❌ Error — try a smaller file or switch to audio mode';
+  } catch (wasmError) {
+    console.error(wasmError);
+    clearInterval(syntheticInterval);
+    progLabel.textContent = '❌ WASM Memory Allocation Limit Exceeded';
     progFill.style.background = 'var(--red)';
-    alert('Processing failed. Very large files may exceed browser memory. For large videos, try audio extraction which is much faster.');
-    actionBtn.textContent = 'Try Again';
-    document.title = 'OrbitWebTools';
+    alert('Processing Exception: Extremely large 4K source video files may exceed browser sandbox memory allocation limits on older devices. Try Audio Extraction mode.');
+    actionBtn.textContent = 'RETRY OPERATION';
   } finally {
     actionBtn.disabled = false;
     clearInterval(tipInterval);
   }
 });
 
-function updateProg(pct, label) {
-  pct = Math.min(100, Math.round(pct));
-  progFill.style.width = pct + '%';
-  progPct.textContent = pct + '%';
-  progLabel.textContent = label;
-  document.title = `[${pct}%] Processing | OrbitWebTools`;
+function updateUIProgress(pctMetric, statusString) {
+  pctMetric = Math.min(100, Math.round(pctMetric));
+  progFill.style.width = pctMetric + '%';
+  progPct.textContent = pctMetric + '%';
+  progLabel.textContent = statusString;
 }
-
-// ─── FAQ accordion ───
-document.querySelectorAll('.faq-q').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const item = btn.closest('.faq-item');
-    const open = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(o => {
-      o.classList.remove('open');
-      o.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
-    });
-    if (!open) {
-      item.classList.add('open');
-      btn.setAttribute('aria-expanded', 'true');
-    }
-  });
-});
-
-// ─── Scroll reveal ───
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
+
 </body>
 </html>
